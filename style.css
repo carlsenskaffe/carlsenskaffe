@@ -17,12 +17,12 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 8%;
     background: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .navbar a {
@@ -73,14 +73,14 @@ body {
 }
 
 .hero-button {
-    font-size: 16px; /* Adjust the font size as needed */
-    padding: 10px 20px; /* Adjust the padding as needed for size */
-    background-color: #fff; /* Button background color */
-    color: #000; /* Button text color */
-    border: none; /* Removes the default border */
-    cursor: pointer; /* Changes the cursor to a pointer on hover */
-    border-radius: 20px; /* Adjusts the curvature of the button edges */
-    margin-top: 20px; /* Adds space between the text and the button */
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 20px;
 }
 
 
@@ -137,6 +137,11 @@ body {
     margin: 5px 0;
 }
 
+.drink-icon, .drink-icon2 {
+    max-width: 100%; /* Ensure icons don't overflow their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
 
 
 /* Correcting the media query for very small screens to ensure 2 items per row */
@@ -149,10 +154,25 @@ body {
     .drink-item {
         width: calc(50% - 20px); /* Show 2 items per row */
         margin: 10px;
+        padding: 15px;
     }
     .drink-icon, .drink-icon2 {
         width: auto; /* Or a specific px value to scale down the icons if necessary */
         max-width: 100%; /* Ensures the icon doesn't overflow its container */
+        height: auto;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .drink-item {
+        width: calc(50% - 20px); /* Keep 2 items per row */
+        margin: 10px;
+        padding: 10px; /* Adjust padding as needed */
+    }
+
+    .drink-icon, .drink-icon2 {
+        width: auto; /* Allow icons to scale with the container */
+        max-width: 100px; /* Adjust max-width for intermediate screens */
         height: auto;
     }
 }
