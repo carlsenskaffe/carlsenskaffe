@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    
+}
+
+.header {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/3.JPG");
+    height: 100vh;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 100px;
+    background-position: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    color: #fff;
+    font-size: 48px; /* Adjust size as needed */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #ddd;
+    font-size: 20px; /* Adjust size as needed */
+    font-weight: 400;
+    text-align: center;
+    max-width: 60%; /* Adjust width as needed */
+    margin: 0 auto;
+}
+
+.hero-button {
+    font-size: 16px; /* Adjust the font size as needed */
+    padding: 10px 20px; /* Adjust the padding as needed for size */
+    background-color: #fff; /* Button background color */
+    color: #000; /* Button text color */
+    border: none; /* Removes the default border */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    border-radius: 20px; /* Adjusts the curvature of the button edges */
+    margin-top: 20px; /* Adds space between the text and the button */
+}
+
+
+.hero-button:hover {
+    background-color: #555;
+}
+
+.drinks-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.drink-item {
+    width: calc(20% - 20px); 
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.drink-item:hover {
+    transform: translateY(-5px);
+}
+
+.drink-icon {
+    width: 150px; /* Adjust based on the icon size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.drink-icon2 {
+    width: 125px; /* Adjust based on the icon size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.drink-item h3 {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .drinks-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .drink-item {
+        width: 90%; /* Full width on smaller screens */
+    }
+}
+
+/* For screens larger than 1200px, you already set up for 5 items per row */
+
+/* For medium screens - 4 items per row */
+@media (max-width: 1200px) {
+    .drink-item {
+        width: calc(25% - 20px);
+    }
+}
+
+/* For small screens - 3 items per row */
+@media (max-width: 992px) {
+    .drink-item {
+        width: calc(33.333% - 20px);
+    }
+}
+
+/* For extra small screens - 2 items per row */
+@media (max-width: 768px) {
+    .drink-item {
+        width: calc(50% - 20px);
+    }
+}
+
+/* For very small screens - 1 item per row */
+@media (max-width: 576px) {
+    .drink-item {
+        width: calc(100% - 20px); /* Adjust this to ensure padding does not cause overflow */
+    }
+}

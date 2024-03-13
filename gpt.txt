@@ -1,0 +1,42 @@
+Landingsside Struktur for Kaffecykel Virksomhed
+
+1. Hero-sektion
+Visuelt: Et tiltalende, høj-kvalitets billede af din kaffecykel i aktion ved et event, hvor kunderne ser glade ud.
+Overskrift: Præsenter din unikke værdiproposition klart, f.eks., "Gør Dit Event Uforglemmeligt med Topkvalitets Kaffe på Hjul."
+Underoverskrift: En støttende udsagn, der tilføjer mere detalje, f.eks., "Vi bringer den bedste kaffeoplevelse direkte til din dør - fra private sammenkomster til store festligheder."
+Opfordring til Handling (CTA): En klar og tiltalende knap, f.eks., "Book Os Nu" eller "Se Vores Services."
+
+2. Om Os (Storytelling-blok)
+Fortælling: Del historien om, hvordan din kaffecykel virksomhed startede, din passion for kaffe, og din mission om at forbedre hvert enkelt event med ekstraordinær kaffeservice.
+Billeder: Inkluder fotos af dit team i aktion og processen med at sætte op til events.
+
+3. Services Tilbudt
+Detaljeret Opdeling: Liste de typer af events du servicerer (private events, firmaevents, sportsbegivenheder) med en kort beskrivelse af, hvad hver service indebærer.
+Tilpasningsmuligheder: Fremhæv eventuelle muligheder for tilpasning af drikke-menuen eller opsætningen af cyklen for at matche eventets tema.
+
+4. Hvorfor Vælge Os? (Mønsterafbrydelse)
+Unikke Salgspunkter (USP'er): Fremhæv, hvad der gør din kaffecykel unik, såsom eksklusive kaffeblandinger, miljøvenlige praksisser, eller hurtig opsætningstid.
+Visualiseringer: Brug ikoner eller hurtige grafikker til let at repræsentere hvert USP for hurtig scanning.
+
+5. Galleri/Testimonials (Social Bevisførelse)
+Kundeudtalelser: Vis udtalelser fra tilfredse kunder med deres fotos og typen af event, du har serviceret.
+Billedgalleri: Fremvis din kaffecykel i forskellige indstillinger, som understreger fleksibiliteten og tilpasningsevnen af din service.
+
+6. FAQ-sektion
+Besvar Almindelige Spørgsmål: Inkluder svar på ofte stillede spørgsmål om din service, bookingproces, betalingsmuligheder, og eventuelle tilpasningsmuligheder. Dette hjælper med at tackle indvendinger på forhånd.
+
+7. Pris Pakker
+Gennemsigtig Prissætning: Udlæg klart dine prispakker baseret på eventets størrelse eller varighed. Giv en kort beskrivelse af, hvad hver pakke inkluderer.
+CTA: Opfordr besøgende til at komme i kontakt for et skræddersyet tilbud eller for at diskutere deres specifikke behov.
+
+8. Kontaktformular/Booking Forespørgsel
+Formularfelter: Anmod om essentiel information (navn, e-mail, eventdato, eventtype, forventet deltagerantal).
+Personlig Berøring: Inkluder en besked, der forsikrer dem om en personlig konsultation for at gøre deres event mindeværdigt.
+CTA: "Send Forespørgsel" eller "Anmod om Tilbagekald".
+
+9. Blog/Indholdssektion
+Engagerende Indhold: Del blogindlæg om kaffekultur, succesfulde events du har cateret til, og tips til at værtskabe mindeværdige sammenkomster. Dette kan positionere dig som en ekspert inden for industrien og holde besøgende engagerede.
+
+10. Footer
+Kontaktinformation: Inkluder din e-mail, telefonnummer, og links til sociale medier.
+Navigationslinks: Hurtige links til sektioner på websitet, privatlivspolitik, og servicevilkår.
