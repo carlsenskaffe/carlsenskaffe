@@ -66,7 +66,7 @@ body {
     display: block;
     z-index: 98;
     background-color: #add8e6;
-    padding-top: 120px;
+    padding-top: 150px;
     transition: 0.4s;
 }
 
@@ -90,6 +90,22 @@ body {
 
 .mobile-nav a:hover {
     background: #2162bd;
+}
+
+.mobile-footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #add8e6;
+    padding: 20px;
+    text-align: center;
+    z-index: 100;
+}
+.mobile-footer a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
 }
 
 
@@ -269,13 +285,17 @@ header {
         padding-right: 24px;
     }
 
-    .icon {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        content: '';
+    .logo_div {
+        margin: auto;
+    }
+
+    .logo {
+        max-height: 100%;
+        max-height: 100%;
     }
 }
+
+
 
 @media (max-width: 767px) {
     .navbar {
