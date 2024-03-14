@@ -163,7 +163,6 @@ header {
     height: 100vh;
     align-items: center;
     background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
     padding-bottom: 20px;
     background-position: center;
@@ -349,9 +348,16 @@ header {
     .hero {
         max-width: 100%;
         height: auto;
+        background-size: contain;
     }
 }
 
+
+@media (min-width: 768px) {
+    .hero {
+        background-size: cover;
+    }
+}
 
 @media (max-width: 767px) {
     .navbar {
