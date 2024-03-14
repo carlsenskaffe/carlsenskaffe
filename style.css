@@ -53,6 +53,7 @@ header {
 
     &.is-scrolling {
         background-color: #add8e6;
+        transition: 0.3s;
         
     }
 
@@ -216,14 +217,13 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-    background-color: #A9A9A9;
+    background-color: #add8e6;
 }
 
 .Vores-Menu {
     font-size: 36px;
     color: #333;
     text-align: center;
-    margin: 40px 0;
     font-family: 'Poppins', sans-serif;
     width: 100%;
 }
@@ -236,6 +236,7 @@ header {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    background-color: #FFF;
 }
 
 .drink-item:hover {
@@ -243,13 +244,13 @@ header {
 }
 
 .drink-icon {
-    width: 150px; /* Adjust based on the icon size */
+    width: 150px;
     height: auto;
     margin-bottom: 10px;
 }
 
 .drink-icon2 {
-    width: 125px; /* Adjust based on the icon size */
+    width: 125px;
     height: auto;
     margin-bottom: 10px;
 }
@@ -259,10 +260,52 @@ header {
 }
 
 .drink-icon, .drink-icon2 {
-    max-width: 100%; /* Ensure icons don't overflow their container */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto; /
 }
 
+#drinks-menu {
+    scroll-margin-top: 140px;
+}
+
+
+/* FAQ */
+
+.faq-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #add8e6;
+}
+
+.faq-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.image-container {
+    flex: 1;
+    padding: 40px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 18px;
+}
 
 
 
