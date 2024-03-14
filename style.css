@@ -281,11 +281,11 @@ header {
 
 @media (max-width: 767px) {
     .container {
-        padding-left: 24px;
         padding-right: 24px;
     }
 
     .logo_div {
+        padding-right: 0;
         margin: auto;
         display: flex;
         justify-content: center;
