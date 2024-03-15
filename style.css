@@ -9,7 +9,10 @@
 
 body {
     min-height: 100vh;   
+    background-color: #432818;
 }
+
+/* Header */
 
 .container {
     display: flex;
@@ -26,6 +29,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    font-weight: 650;
     .container {
         padding-top: 8px;
         padding-bottom: 8px;
@@ -52,7 +56,7 @@ header {
     }
 
     &.is-scrolling {
-        background-color: #add8e6;
+        background-color: #432818;
         transition: 0.3s;
         
     }
@@ -94,10 +98,6 @@ header {
     opacity: 0;
 }
 
-
-
-
-
 .mobile-nav {
     position: fixed;
     top: 0;
@@ -106,7 +106,7 @@ header {
     width: 100%;
     display: block;
     z-index: 98;
-    background-color: #add8e6;
+    background-color: #432818;
     padding-top: 50%;
     transition: 0.4s;
 
@@ -137,7 +137,7 @@ header {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #add8e6;
+    background-color: #432818;
     padding: 20px;
     text-align: center;
     z-index: 100;
@@ -148,6 +148,23 @@ header {
     text-decoration: none;
     margin-bottom: 10px;
 }
+
+
+.section-title {
+    color: #FFF;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.section-title p {
+    font-size: 24px;
+}
+
 
 
 
@@ -208,6 +225,56 @@ header {
 }
 
 
+.info-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-box {
+    width: calc(25% - 20px);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    background-color: #fff;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+}
+
+.info-box h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.info-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .info-box {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .info-box {
+        width: calc(100% - 20px);
+    }
+}
+
+
+
 
 
 /* MENU */
@@ -217,7 +284,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-    background-color: #add8e6;
+    background-color: #432818;
 }
 
 .Vores-Menu {
@@ -277,7 +344,7 @@ header {
     flex-direction: row;
     justify-content: center; /* Center the content horizontally */
     align-items: center;
-    background-color: #add8e6;
+    background-color: #432818;
 }
 
 .faq-content {
@@ -294,6 +361,7 @@ header {
 .image-container img {
     max-width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 
 .faq-item {
