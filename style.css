@@ -167,6 +167,7 @@ header {
     padding-bottom: 20px;
     background-position: center;
     position: relative;
+    background-size: cover;
 }
 
 .hero-content {
@@ -270,10 +271,11 @@ header {
 
 /* FAQ */
 
+/* FAQ */
 .faq-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center; /* Center the content horizontally */
     align-items: center;
     background-color: #add8e6;
 }
@@ -281,6 +283,7 @@ header {
 .faq-content {
     flex: 1;
     padding: 40px;
+    text-align: center; /* Center the text */
 }
 
 .image-container {
@@ -305,6 +308,7 @@ header {
 .faq-item p {
     font-size: 18px;
 }
+
 
 
 
@@ -344,20 +348,7 @@ header {
 }
 
 
-@media (max-width: 767px) {
-    .hero {
-        max-width: 100%;
-        height: auto;
-        background-size: contain;
-    }
-}
 
-
-@media (min-width: 768px) {
-    .hero {
-        background-size: cover;
-    }
-}
 
 @media (max-width: 767px) {
     .navbar {
@@ -367,6 +358,7 @@ header {
 }
 
 
+/* Menu */
 @media (max-width: 576px) {
     .drinks-menu {
         flex-direction: row;
