@@ -196,18 +196,18 @@ header {
 
 .hero-content h1 {
     color: #fff;
-    font-size: 48px; /* Adjust size as needed */
-    font-weight: 700;
+    font-size: 35px;
+    font-weight: 800;
     text-align: center;
-    margin-bottom: 20px;
+    max-width: 80%;
 }
 
 .hero-content p {
     color: #ddd;
-    font-size: 20px; /* Adjust size as needed */
+    font-size: 20px;
     font-weight: 400;
     text-align: center;
-    max-width: 60%; /* Adjust width as needed */
+    max-width: 60%;
     margin: 0 auto;
 }
 
@@ -227,7 +227,7 @@ header {
 
 .info-section {
     text-align: center;
-    padding: 50px 0;
+    
 }
 
 .container1 {
@@ -237,13 +237,14 @@ header {
 }
 
 .info-box {
-    width: calc(25% - 20px);
+    width: calc(50% - 20px);
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    background-color: #fff;
+    background-color: #371e0f;
+    max-width: 40%;
 }
 
 .info-box:hover {
@@ -253,17 +254,18 @@ header {
 .info-box h3 {
     margin-bottom: 10px;
     font-size: 20px;
-    color: #333;
+    color: #fff;
+    font-weight: 700;
 }
 
 .info-box p {
     font-size: 16px;
-    color: #666;
+    color: #fff;
 }
 
 @media (max-width: 768px) {
     .info-box {
-        width: calc(50% - 20px);
+        
     }
 }
 
@@ -285,11 +287,11 @@ header {
     justify-content: space-around;
     padding: 20px;
     background-color: #432818;
+    color: #FFF;
 }
 
 .Vores-Menu {
     font-size: 36px;
-    color: #FFF;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     width: 100%;
@@ -303,7 +305,7 @@ header {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    background-color: #FFF;
+    background-color: #371e0f;
 }
 
 .drink-item:hover {
@@ -342,15 +344,16 @@ header {
 .faq-section {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Center the content horizontally */
+    justify-content: center;
     align-items: center;
     background-color: #432818;
+    color: #FFF;
 }
 
 .faq-content {
     flex: 1;
     padding: 40px;
-    text-align: center; /* Center the text */
+    text-align: center;
 }
 
 .image-container {
@@ -402,6 +405,10 @@ header {
         padding-right: 24px;
     }
 
+    .navbar {
+        display: none;
+    }
+
     .logo_div {
         padding-right: 0;
         margin: auto;
@@ -413,16 +420,10 @@ header {
         max-height: 100%;
         max-height: 100%;
     }
-}
 
-
-
-
-@media (max-width: 767px) {
-    .navbar {
-        display: none;
+    .hero h1 {
+        font-size: ;
     }
-    
 }
 
 
@@ -456,5 +457,12 @@ header {
         width: auto; 
         max-width: 100px; 
         height: auto;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .image-container {
+        display: none;
     }
 }
