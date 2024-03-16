@@ -427,6 +427,14 @@ header {
 }
 
 
+/* HERO */
+
+@media (max-width: 767px) {
+    .hero-content {
+        margin-bottom: 10%;
+    }
+}
+
 /* Menu */
 @media (max-width: 576px) {
     .drinks-menu {
