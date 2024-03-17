@@ -4,6 +4,7 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scroll-margin-top: 140px;
 }
 
 
@@ -224,7 +225,49 @@ header {
     text-decoration: none; 
 }
 
+.scroller {
+    margin-top: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 20px;
+}
 
+.scroller span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.scroller span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+.scroller span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+/* Info */
 .info-section {
     text-align: center;
     
@@ -237,7 +280,7 @@ header {
 }
 
 .info-box {
-    width: calc(50% - 20px);
+    width: calc(40% - 20px);
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
@@ -325,10 +368,6 @@ header {
 .drink-icon, .drink-icon2 {
     max-width: 100%;
     height: auto; /
-}
-
-#drinks-menu {
-    scroll-margin-top: 140px;
 }
 
 
