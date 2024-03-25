@@ -471,6 +471,11 @@ header {
     .hero-content {
         margin-bottom: 10%;
     }
+
+    .hero {
+        background-size: 150% auto;
+        background-position: center center;
+    }
 }
 
 
