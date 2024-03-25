@@ -13,6 +13,11 @@ body {
     background-color: #432818;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Header */
 
 .container {
@@ -177,7 +182,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/3.JPG");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/hero.JPG");
     height: 100vh;
     align-items: center;
     background-repeat: no-repeat;
@@ -396,7 +401,7 @@ header {
 
 .image-container img {
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
     border-radius: 20px;
 }
 
