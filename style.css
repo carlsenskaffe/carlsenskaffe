@@ -436,6 +436,18 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Screen Size */
 
 /* Nav */
@@ -526,15 +538,15 @@ header {
     }
 
     .image-container {
-        width: 100%; /* Ensures the container takes up full width */
-        order: 2; /* Optionally ensures the image container comes after the FAQ content */
+        width: 100%;
+        order: 2; 
         padding: 0;
         margin: 0;
     }
 
     .image-container img {
-        width: 100%; /* Makes the image stretch to cover the full width of its container */
-        height: auto; /* Adjusts the height automatically to maintain the aspect ratio */
+        width: 100%; 
+        height: auto; 
         border-radius: 0px;
         
     }
