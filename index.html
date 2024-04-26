@@ -141,7 +141,7 @@
             <h1>Ofte Stillede Spørgsmål</h2>
             <div class="faq-item">
                 <h3>Hvor stor er kaffecyklen?</h3>
-                <p>Kaffecyklen er ca. 90 cm. bred og ca. 225 cm. lang </p>
+                <p>Kaffecyklen er ca. 90 cm. bred og ca. 225 cm. lang. </p>
             </div>
             <div class="faq-item">
                 <h3>Hvad hvis det regner?</h3>
@@ -149,7 +149,7 @@
             </div>
             <div class="faq-item">
                 <h3>Skal der strøm til kaffecyklen?</h3>
-                <p>Kaffecyklen er udstyret med egen vand, strøm og gas, og kan derfor stå både indenfor og udendørs.</p>
+                <p>Kaffecyklen er udstyret med egen strøm, vand og gas, og kan derfor stå både indenfor og udendørs.</p>
             </div>
             <div class="faq-item">
                 <h3>Question 2?</h3>
@@ -195,11 +195,12 @@
 
             <label for="eventType">Event type</label>
             <select name="eventType" id="eventType" required>
-                <option value="PickEvent">Vælg event</option>
+                <option selected="true" style="display:none;" value="PickEvent">Vælg event</option>
                 <option value="firmaEvent">Firma event</option>
                 <option value="festbryllup">Fest / Bryllup</option>
                 <option value="messe">Messe</option>
                 <option value="festival">Festival</option>
+                <option value="sportsbegivenhed">Sportsbegivenhed</option>
                 <option value="anden">Anden</option>
             </select>
 
