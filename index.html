@@ -17,7 +17,7 @@
         <div class="container">
             <div class="logo_div">
                 <a href="index.html">
-                    <img src="assets/logo.png" width="125" height="125" class="logo">
+                    <img src="assets/logo.png" width="100" height="100" class="logo">
                 </a>
             </div>
 
@@ -74,7 +74,7 @@
             </div>
             <div class="info-box">
                 <h3>Kaffecyklen er selvforsynende</h3>
-                <p>Kaffecyklen er udstyret med egen vand, strøm og gas, og kan derfor stå både inden- og udendørs, og kan flyttes undervejs.</p>
+                <p></p>
             </div>
             <div class="info-box">
                 <h3>Service 3</h3>
@@ -136,20 +136,20 @@
         
     </section>
 
-    <section id="faq-section" class="faq-section" id="faq-section">
+    <section id="faq-section" class="faq-section">
         <div class="faq-content">
             <h1>Ofte Stillede Spørgsmål</h2>
             <div class="faq-item">
                 <h3>Hvor stor er kaffecyklen?</h3>
-                <p></p>
+                <p>Kaffecyklen er ca. 90 cm. bred og ca. 225 cm. lang </p>
             </div>
             <div class="faq-item">
-                <h3>Question 2?</h3>
-                <p>Answer 2.</p>
+                <h3>Hvad hvis det regner?</h3>
+                <p>Hvis det regner og blæser meget, skal vi helst stå i læ.</p>
             </div>
             <div class="faq-item">
-                <h3>Question 2?</h3>
-                <p>Answer 2.</p>
+                <h3>Skal der strøm til kaffecyklen?</h3>
+                <p>Kaffecyklen er udstyret med egen vand, strøm og gas, og kan derfor stå både indenfor og udendørs.</p>
             </div>
             <div class="faq-item">
                 <h3>Question 2?</h3>
@@ -166,8 +166,74 @@
         </div>
     </section>
 
+    <section class="prices">
 
 
+    </section>
+
+    <section class="contact" >
+        
+        <form method="post" action="sendE.php">
+            <h1>Lav en forespørgsel på dit kaffeevent helt uforpligtende.</h1>
+            <div class="inline-inputs">
+                <div>
+                    <label for="fornavn">Fornavn</label>
+                    <input type="text" name="fornavn" id="fornavn" required>
+                </div>
+                <div>
+                    <label for="efternavn">Efternavn</label>
+                    <input type="text" name="efternavn" id="efternavn" required>
+                </div>
+            </div>
+            
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="telefonNummer">Telefon Nummer</label>
+            <input type="text" name="telefonNummer" id="telefonNummer" placeholder="Eks. +45 10203040" required>
+
+            <label for="eventType">Event type</label>
+            <select name="eventType" id="eventType" required>
+                <option value="PickEvent">Vælg event</option>
+                <option value="firmaEvent">Firma event</option>
+                <option value="festbryllup">Fest / Bryllup</option>
+                <option value="messe">Messe</option>
+                <option value="festival">Festival</option>
+                <option value="anden">Anden</option>
+            </select>
+
+            <span class="eventTitle">Indendørs / Udendørs</span>
+            <span class="indendørsLabel">Indendørs event</span>
+            <input type="radio" name="indendørsudendørs" id="indendørs" required>
+            
+            <span class="udendørsLabel">Udendørs event</span>
+            <input type="radio" name="indendørsudendørs" id="udendørs">
+            
+            <label for="eventDato">Event Dato</label>
+            <input type="date" name="eventDato" id="eventDato" autocomplete="off">
+
+            <label for="tidspunkt">Start tidspunkt</label>
+            <input type="time" name="tidspunkt" id="tidspunkt" required>
+
+            <label for="guests">Antal gæster</label>
+            <input type="number" name="guests" id="guests" required>
+
+            <label for="eventAdresse">Event addresse</label>
+            <input type="text" name="eventAdresse" id="eventAdresse" required>
+
+            <label for="beskrivEvent">Beskriv dit event</label>
+            <textarea name="beskrivEvent" id="beskrivEvent"></textarea>
+            
+            <button>Send forespørgsel</button>
+            
+        </form>
+
+        <div class="image-container">
+            <img src="assets/3.jpg">
+        </div>
+
+    </section>
 
    <script src="main.js"></script>
 </body>

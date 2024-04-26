@@ -4,7 +4,7 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    scroll-margin-top: 140px;
+    scroll-margin-top: 115px;
 }
 
 
@@ -13,10 +13,7 @@ body {
     background-color: #432818;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+
 
 /* Header */
 
@@ -64,6 +61,7 @@ header {
     &.is-scrolling {
         background-color: #432818;
         transition: 0.3s;
+
         
     }
 
@@ -203,7 +201,6 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
 }
 
 .hero-content {
@@ -246,46 +243,9 @@ header {
     text-decoration: none; 
 }
 
-.scroller {
-    margin-top: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-bottom: 20px;
-}
-
-.scroller span {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
-}
-
-.scroller span:nth-child(2) {
-    animation-delay: -0.2s;
-}
-.scroller span:nth-child(3) {
-    animation-delay: -0.4s;
-}
-
-@keyframes animate {
-    0%
-    {
-        opacity: 0;
-    }
-    50%
-    {
-        opacity: 1;
-    }
-    100%
-    {
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
-    }
+.hero-button:hover {
+    background: #bbb9b9;
+    transition: 0.3s;
 }
 
 /* Info */
@@ -384,9 +344,6 @@ header {
     height: auto; /
 }
 
-
-/* FAQ */
-
 /* FAQ */
 .faq-section {
     display: flex;
@@ -429,14 +386,103 @@ header {
 
 
 
+.contact {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    color: #FFF;
+    margin: 0 auto;
+    
+}
+
+.contact .image-container,
+.contact form {
+    flex: 1;
+    margin: 10px;
+}
+
+.contact .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.contact h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 
+.contact button {
+    background-color: #fff;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #bbb9b9;
+    transition: 0.3s;
+}
+
+.contact label {
+    margin: 10px 0 5px;
+}
+
+.contact input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
 
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px; 
+    margin: 0 auto;
+}
 
+.contact label {
+    display: block; 
+    margin-bottom: 5px; 
+    color: #fff; 
+    font-weight: bold; 
+}
 
+.contact input,
+.contact select,
+.contact textarea {
+    width: 100%; /* Full width */
+    padding: 8px; /* Padding inside the inputs */
+    margin-bottom: 15px; /* Space between form elements */
+    border-radius: 4px; /* Rounded borders */
+    border: 1px solid #ccc; /* Subtle border color */
+    resize: none;
+}
 
+.inline-inputs {
+    display: flex;
+    justify-content: space-between;
+}
 
+.inline-inputs > div {
+    flex: 1;
+}
+
+.inline-inputs > div:first-child {
+    margin-right: 10px; /* Spacing between the two inline inputs */
+}
 
 
 
@@ -532,12 +578,12 @@ header {
 }
 
 @media (max-width: 767px) {
-    .faq-section {
+    .faq-section, .contact {
         flex-direction: column;
         align-items: center;
     }
 
-    .image-container {
+    .faq-section .image-container, .contact .image-container{
         width: 100%;
         order: 2; 
         padding: 0;
@@ -547,7 +593,26 @@ header {
     .image-container img {
         width: 100%; 
         height: auto; 
-        border-radius: 0px;
-        
+        border-radius: 0px;   
+    }
+    
+    
+    .contact img {
+        max-width: 100%;
+        margin-top: 20px;
+        padding: 0;
+
     }
 }
+
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+
