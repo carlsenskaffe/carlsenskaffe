@@ -428,6 +428,7 @@ header {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-weight: 700;
 }
 
 .contact button:hover {
@@ -464,11 +465,11 @@ header {
 .contact input,
 .contact select,
 .contact textarea {
-    width: 100%; /* Full width */
-    padding: 8px; /* Padding inside the inputs */
-    margin-bottom: 15px; /* Space between form elements */
-    border-radius: 4px; /* Rounded borders */
-    border: 1px solid #ccc; /* Subtle border color */
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
     resize: none;
 }
 
@@ -482,16 +483,12 @@ header {
 }
 
 .inline-inputs > div:first-child {
-    margin-right: 10px; /* Spacing between the two inline inputs */
+    margin-right: 10px; 
 }
 
-
-
-
-
-
-
-
+.indendørsudendørs {
+    font-size: 2.5vh;
+}
 
 
 

@@ -171,7 +171,7 @@
 
     </section>
 
-    <section class="contact" >
+    <section class="contact">
         
         <form method="post" action="sendE.php">
             <h1>Lav en forespørgsel på dit kaffeevent helt uforpligtende.</h1>
@@ -203,16 +203,17 @@
                 <option value="sportsbegivenhed">Sportsbegivenhed</option>
                 <option value="anden">Anden</option>
             </select>
+            <div class="radio">
+                <label class="eventTitle">Indendørs / Udendørs</label>
+                <label for="indendørs" class="indendørsudendørs">Indendørs event</label>
+                <input type="radio" name="indendørsudendørs" id="indendørs" value="Indendørs" required>
+            
+                <label for="udendørs" class="indendørsudendørs">Udendørs event</label>
+                <input type="radio" name="indendørsudendørs" id="udendørs" value="Udendørs">
+            </div>
 
-            <span class="eventTitle">Indendørs / Udendørs</span>
-            <span class="indendørsLabel">Indendørs event</span>
-            <input type="radio" name="indendørsudendørs" id="indendørs" required>
-            
-            <span class="udendørsLabel">Udendørs event</span>
-            <input type="radio" name="indendørsudendørs" id="udendørs">
-            
             <label for="eventDato">Event Dato</label>
-            <input type="date" name="eventDato" id="eventDato" autocomplete="off">
+            <input type="date" name="eventDato" id="eventDato" autocomplete="off" required>
 
             <label for="tidspunkt">Start tidspunkt</label>
             <input type="time" name="tidspunkt" id="tidspunkt" required>
@@ -221,7 +222,7 @@
             <input type="number" name="guests" id="guests" required>
 
             <label for="eventAdresse">Event addresse</label>
-            <input type="text" name="eventAdresse" id="eventAdresse" required>
+            <input type="text" name="eventAdresse" id="eventAdresse" placeholder="Eks. Carl Jacobsens Vej 84, 2500" required>
 
             <label for="beskrivEvent">Beskriv dit event</label>
             <textarea name="beskrivEvent" id="beskrivEvent"></textarea>
