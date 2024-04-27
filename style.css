@@ -354,6 +354,11 @@ header {
     color: #FFF;
 }
 
+.faq-section h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
 .faq-content {
     flex: 1;
     padding: 40px;
@@ -410,6 +415,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    max-width: 700px; 
 }
 
 .contact h1 {
@@ -447,14 +453,6 @@ header {
     border-radius: 4px;
 }
 
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-    max-width: 700px; 
-    margin: 0 auto;
-}
-
 .contact label {
     display: block; 
     margin-bottom: 5px; 
@@ -485,11 +483,6 @@ header {
 .inline-inputs > div:first-child {
     margin-right: 10px; 
 }
-
-.indendørsudendørs {
-    font-size: 2.5vh;
-}
-
 
 
 /* Screen Size */
