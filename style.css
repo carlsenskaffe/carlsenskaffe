@@ -460,7 +460,10 @@ header {
     font-weight: bold; 
 }
 
-.contact input,
+.contact input[type="text"],
+.contact input[type="time"],
+.contact input[type="date"],
+.contact input[type="date"],
 .contact select,
 .contact textarea {
     width: 100%;
@@ -482,6 +485,10 @@ header {
 
 .inline-inputs > div:first-child {
     margin-right: 10px; 
+}
+
+.contact input[type="radio"] {
+    width: auto;
 }
 
 
