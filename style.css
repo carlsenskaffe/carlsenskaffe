@@ -396,19 +396,19 @@ header {
 }
 
 .faq-item h3:before {
-    content: ""; /* This is necessary to render the pseudo-element */
+    content: "";
     position: absolute;
-    top: 0; /* Position at the very top of the h3 padding area */
-    width: 100%; /* Make the line as wide as the .faq-content */
-    border-top: 2px solid #FFF; /* Creates the white line */
+    top: 0; 
+    width: 100%; 
+    border-top: 2px solid #FFF;
     display: block;
     text-align: center;
 }
 
 .faq-item p {
     font-size: 18px;
-    max-height: 0; /* Start with no height */
-    overflow: hidden; /* Prevent content from overflowing */
+    max-height: 0;
+    overflow: hidden;
     transition: max-height 0.2s ease;
 }
 
