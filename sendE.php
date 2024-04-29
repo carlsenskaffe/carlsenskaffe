@@ -32,7 +32,7 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
 $mail->Username = "carlsenskaffe@gmail.com";
-$mail->Password = "jdzvlbxzithnyrkg";
+$mail->Password = "";
 $mail->isHTML(false);
 
 $mail->setFrom("carlsenskaffe@gmail.com", $fornavn . ' ' . $efternavn);
