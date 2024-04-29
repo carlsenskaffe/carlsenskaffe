@@ -39,3 +39,20 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         alert('Der opstod en fejl. Prøv venligst igen.');
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const faqHeaders = document.querySelectorAll('.faq-item h3');
+    faqHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            const parent = this.parentElement;
+            const paragraph = parent.querySelector('p');
+            if (parent.classList.contains('active')) {
+                parent.classList.remove('active');
+                paragraph.style.maxHeight = null; // Reset max-height
+            } else {
+                parent.classList.add('active');
+                paragraph.style.maxHeight = paragraph.scrollHeight + "px"; // Set max-height dynamically
+            }
+        });
+    });
+});

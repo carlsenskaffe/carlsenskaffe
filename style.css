@@ -361,14 +361,15 @@ header {
 }
 
 .faq-section h2 {
-    font-size: 30px;
-    margin-bottom: 5px;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 .faq-content {
     flex: 1;
     padding: 40px;
     text-align: center;
+    position: relative;
 }
 
 .image-container {
@@ -388,11 +389,31 @@ header {
 
 .faq-item h3 {
     font-size: 24px;
-    margin-bottom: 10px;
+
+    cursor: pointer;
+    position: relative;
+    padding-top: 20px;
+}
+
+.faq-item h3:before {
+    content: ""; /* This is necessary to render the pseudo-element */
+    position: absolute;
+    top: 0; /* Position at the very top of the h3 padding area */
+    width: 100%; /* Make the line as wide as the .faq-content */
+    border-top: 2px solid #FFF; /* Creates the white line */
+    display: block;
+    text-align: center;
 }
 
 .faq-item p {
     font-size: 18px;
+    max-height: 0; /* Start with no height */
+    overflow: hidden; /* Prevent content from overflowing */
+    transition: max-height 0.2s ease;
+}
+
+.faq-item.active p {
+    max-height: 200px;
 }
 
 /* Priser */
