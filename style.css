@@ -684,7 +684,7 @@ select {
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600) {
     .price-option {
         max-width: calc(33.333% - 20px); /* for 3 columns, adjust as necessary */
     }
@@ -697,9 +697,9 @@ select {
     }
 }
 
-
-
-
-
-
-
+@media (max-width: 480px) {
+    .price-option {
+        min-width: 40%;
+    }
+    
+}
