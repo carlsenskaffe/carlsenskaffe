@@ -463,7 +463,6 @@ header {
     justify-content: space-between; 
     color: #FFF;
     margin: 0 auto;
-    
 }
 
 .contact .image-container,
@@ -529,7 +528,6 @@ header {
 .contact input[type="text"],
 .contact input[type="time"],
 .contact input[type="date"],
-.contact input[type="date"],
 .contact select,
 .contact textarea {
     width: 100%;
@@ -542,6 +540,18 @@ header {
 
 .contact input[type="date"] {
     max-width: 200px;
+}
+
+select {
+    max-width: 200px;
+}
+
+.contact input[type="time"] {
+    max-width: 100px;
+}
+
+.contact input[type="number"] {
+    max-width: 100px;
 }
 
 .inline-inputs {
