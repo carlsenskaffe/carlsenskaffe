@@ -17,7 +17,7 @@ window.onload = function () {
 }
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Stop the form from submitting the traditional way
+    event.preventDefault();
 
     var formData = new FormData(this);
 
@@ -27,16 +27,15 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     }).then(response => {
         // Handle the response from sendE.php
         if(response.ok) {
-            // Hide the form
-            document.getElementById('myForm').style.display = 'none';
+            this.reset();
             // Show the thank-you message
-            document.getElementById('thankYouMessage').style.display = 'block';
+            alert('Tak for din forespørgsel. Vi vender tilbage hurtigst muligt.')
         } else {
             // Handle errors
-            alert('There was a problem submitting your form. Please try again.');
+            alert('Der opstod en fejl. Prøv venligst igen.');
         }
     }).catch(error => {
         // Handle any other errors
-        alert('There was a problem submitting your form. Please try again.');
+        alert('Der opstod en fejl. Prøv venligst igen.');
     });
 });

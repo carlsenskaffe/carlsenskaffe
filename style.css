@@ -424,6 +424,11 @@ header {
     max-width: calc(50% - 20px);
 }
 
+.thankyoumessage {
+    text-align: center;
+    justify-content: center;
+    padding: 200px;
+}
 
 
 .time {
@@ -535,6 +540,10 @@ header {
     resize: none;
 }
 
+.contact input[type="date"] {
+    max-width: 200px;
+}
+
 .inline-inputs {
     display: flex;
     justify-content: space-between;
@@ -551,6 +560,7 @@ header {
 .contact input[type="radio"] {
     width: auto;
 }
+
 
 
 /* Screen Size */
