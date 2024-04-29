@@ -50,7 +50,9 @@
         <img src="assets/hero.jpg" class="hero-image">
         <div class="hero-content" id="hero-content">
             <h1>Lej en kaffecykel med barista i København</h1>
-            <button class="hero-button" id="hero-button">Få et uforpligtende tilbud</button>
+            <a href="#contact">
+                <button class="hero-button" id="hero-button">Få et uforpligtende tilbud</button>
+            </a>
         </div> 
     </div>
 
@@ -167,13 +169,48 @@
     </section>
 
     <section class="prices">
-
+        <h2 class="priser-title">Vores priser</h2>
+        <div class="pricing-table">
+            <div class="price-option">
+                <div class="time">1 times fri kaffe</div>
+                <div class="price">1.700 kr,-</div>
+            </div>
+            <div class="price-option">
+                <div class="time">2 timers fri kaffe</div>
+                <div class="price">2.700 kr,-</div>
+            </div>
+            <div class="price-option">
+                <div class="time">3 timers fri kaffe</div>
+                <div class="price">3.700 kr,-</div>
+            </div>
+            <div class="price-option">
+                <div class="time">4 timers fri kaffe</div>
+                <div class="price">4.700 kr,-</div>
+            </div>
+            <div class="price-option">
+                <div class="time">5 timers fri kaffe</div>
+                <div class="price">5.700 kr,-</div>
+            </div>
+            <div class="price-option">
+                <div class="time">6 timers fri kaffe</div>
+                <div class="price">6.700 kr,-</div>
+            </div>
+    </div>
+    <div class="footer-prices">
+        <p>Vores kaffevogn kan servere for ca. 50 gæster i timen.</p>
+        <p>Et transportgebyr tillægges for events uden for København.<br>Eksempler: Roskilde, Køge, Hillerød: 1.000 kr</p>
+        <p>Alle priser er inklusiv moms.</p>
+    </div>
 
     </section>
 
     <section class="contact" id="contact">
+
+        <div class="image-container">
+            <img src="assets/3.jpg">
+        </div>
         
-        <form method="post" action="sendE.php">
+        <form id="contact-form" method="post" action="sendE.php">
             <h1>Lav en forespørgsel på dit kaffeevent helt uforpligtende.</h1>
             <div class="inline-inputs">
                 <div>
@@ -230,10 +267,11 @@
             <button>Send forespørgsel</button>
             
         </form>
-
-        <div class="image-container">
-            <img src="assets/3.jpg">
+        <div id="thankYouMessage" style="display: none;">
+            <h1>Thank you for submitting!</h1>
         </div>
+
+        
 
     </section>
 

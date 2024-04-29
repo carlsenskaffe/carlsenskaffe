@@ -13,6 +13,12 @@ body {
     background-color: #432818;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 
 
 /* Header */
@@ -389,7 +395,62 @@ header {
     font-size: 18px;
 }
 
+/* Priser */
 
+.priser-title {
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    color: #FFF;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: #FFF;
+}
+
+.price-option {
+    flex: 1;
+    background-color: #371e0f;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    max-width: calc(50% - 20px);
+}
+
+
+
+.time {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.footer-prices {
+    color: #FFF;
+    padding: 0px;
+    text-align: center;
+    margin: 50px;
+}
+
+.footer-prices p {
+    margin: 10px 0;
+}
+
+
+
+/* Contact */
 
 .contact {
     display: flex;
@@ -603,13 +664,21 @@ header {
     }
 }
 
-
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+@media (min-width: 600px) {
+    .price-option {
+        max-width: calc(33.333% - 20px); /* for 3 columns, adjust as necessary */
+    }
 }
+
+/* Media query for desktop screens */
+@media (min-width: 900px) {
+    .price-option {
+        max-width: calc(25% - 20px); /* for 4 columns */
+    }
+}
+
+
+
 
 
 
