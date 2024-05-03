@@ -16,6 +16,7 @@ $beskrivEvent = $_POST["beskrivEvent"];
 
 
 require "vendor/autoload.php";
+require "creds.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
