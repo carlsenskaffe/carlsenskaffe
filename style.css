@@ -143,20 +143,20 @@ header {
 
 .mobile-footer {
     left: 0;
-    width: 100%; /* Full width */
-    background-color: #432818; /* Background color */
-    padding: 10px 0; /* Padding top and bottom */
-    text-align: center; /* Center text horizontally */
-    z-index: 100; /* Keep it above other content */
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    width: 100%; 
+    background-color: #432818;
+    padding: 10px 0;
+    text-align: center; 
+    z-index: 100; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
 }
 .mobile-footer a {
-    display: inline-block; /* Make the links inline for alignment */
-    color: #fff; /* Text color */
-    text-decoration: none; /* No underline */
-    margin: 0 10px; /* Space between links */
+    display: inline-block;
+    color: #fff; 
+    text-decoration: none;
+    margin: 0 10px;
 }
 
 
@@ -164,6 +164,7 @@ header {
     color: #FFF;
     text-align: center;
     padding: 40px 0;
+    padding-top: 20px;
 }
 
 .section-title h2 {
@@ -195,21 +196,21 @@ header {
 }
 
 .herogradient {
-    position: relative; /* Allows absolute positioning inside it */
+    position: relative; 
     width: 100%;
-    height: 100vh; /* Adjust height as needed */
-    display: flex; /* Ensures the image fills the container */
+    height: 100vh;
+    display: flex;
 }
 
 .herogradient:after {
-    content: ''; /* Necessary for the pseudo-element to work */
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 100%); /* Gradient effect */
-    z-index: 1; /* Ensures it covers the image */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1;
 }
 
 .hero-content {
@@ -480,7 +481,6 @@ header {
     justify-content: space-between; 
     color: #FFF;
     margin: 0 auto;
-    padding: 0 auto;
 }
 
 .contact .image-container,
@@ -607,7 +607,7 @@ footer {
 }
 
 .footer-column {
-    flex: 1; /* Each column takes equal space */
+    flex: 1;
 }
 
 .footer-column h4 {
@@ -627,12 +627,12 @@ footer {
 }
 
 .social-media li {
-    display: inline-block; /* Display social icons inline */
+    display: inline-block;
     margin-right: 10px;
 }
 
 .social-media li a img {
-    width: 30px; /* Set appropriate size for social icons */
+    width: 30px;
     height: auto;
 }
 
@@ -753,14 +753,13 @@ footer {
 
 @media (min-width: 600) {
     .price-option {
-        max-width: calc(33.333% - 20px); /* for 3 columns, adjust as necessary */
+        max-width: calc(33.333% - 20px);
     }
 }
 
-/* Media query for desktop screens */
 @media (min-width: 900px) {
     .price-option {
-        max-width: calc(25% - 20px); /* for 4 columns */
+        max-width: calc(25% - 20px);
     }
 }
 
