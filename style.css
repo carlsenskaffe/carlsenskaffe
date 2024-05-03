@@ -115,7 +115,7 @@ header {
     display: block;
     z-index: 98;
     background-color: #432818;
-    padding-top: 50%;
+    padding-top: 20%;
     transition: 0.4s;
 
 }
@@ -125,36 +125,38 @@ header {
 }
 
 .mobile-nav a {
-        width: 100%;
-        max-width: 200px;
-        margin: 0 auto 16px;
-        display: block;
-        text-align: center;
-        padding: 12px 16px;
-        background-color: #371e0f;
-        text-decoration: none;
-        color: #FFF;
-        border-radius: 5px;
+
+    max-width: 200px;
+    margin: 0 auto 16px;
+    display: block;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: #371e0f;
+    text-decoration: none;
+    color: #FFF;
+    border-radius: 5px;
 }
 
 .mobile-nav a:hover {
-    background: #2162bd;
+    background: #261409;
 }
 
 .mobile-footer {
-    bottom: 0;
     left: 0;
-    width: 100%;
-    background-color: #432818;
-    padding: 20px;
-    text-align: center;
-    z-index: 100;
+    width: 100%; /* Full width */
+    background-color: #432818; /* Background color */
+    padding: 10px 0; /* Padding top and bottom */
+    text-align: center; /* Center text horizontally */
+    z-index: 100; /* Keep it above other content */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
 }
 .mobile-footer a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 10px;
+    display: inline-block; /* Make the links inline for alignment */
+    color: #fff; /* Text color */
+    text-decoration: none; /* No underline */
+    margin: 0 10px; /* Space between links */
 }
 
 
@@ -380,9 +382,10 @@ header {
 }
 
 .image-container img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 .faq-item {
@@ -391,7 +394,6 @@ header {
 
 .faq-item h3 {
     font-size: 24px;
-
     cursor: pointer;
     position: relative;
     padding-top: 20px;
@@ -478,6 +480,7 @@ header {
     justify-content: space-between; 
     color: #FFF;
     margin: 0 auto;
+    padding: 0 auto;
 }
 
 .contact .image-container,
@@ -629,7 +632,7 @@ footer {
 }
 
 .social-media li a img {
-    width: 24px; /* Set appropriate size for social icons */
+    width: 30px; /* Set appropriate size for social icons */
     height: auto;
 }
 
@@ -667,13 +670,8 @@ footer {
         max-height: 100%;
         max-height: 100%;
     }
-}
 
-
-
-
-/* Hero */
-@media (max-width: 767px) {
+    /* Hero */
     .hero-content {
         margin-bottom: 20%;
     }
@@ -735,7 +733,7 @@ footer {
     .image-container img {
         width: 100%; 
         height: auto; 
-        border-radius: 0px;   
+        border-radius: 0px; 
     }
     
     
@@ -743,7 +741,6 @@ footer {
         max-width: 100%;
         margin-top: 20px;
         padding: 0;
-
     }
 
     .price {

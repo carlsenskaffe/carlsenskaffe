@@ -33,13 +33,13 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
 $mail->Username = "carlsenskaffe@gmail.com";
-$mail->Password = "";
+$mail->Password = $smtp_password;
 $mail->isHTML(false);
 
 $mail->setFrom("carlsenskaffe@gmail.com", $fornavn . ' ' . $efternavn);
 $mail->addAddress("carlsenskaffe@gmail.com", "Carlsens Kaffe");
 
-$mail->Subject = $eventType . ' ' . $eventDato;
+$mail->Subject = $fornavn . ' ' . $efternavn . ' - ' . $eventType . ' - ' . $eventDato;
 $mail->Body = 'Navn: ' . $fornavn . ' ' . $efternavn . "\n" . 'Email: ' . $email . "\n" . 'Telefon Nummer: ' . $telefonNummer . "\n" . 'Event type: ' . $eventType . "\n" . "Indendørs / Udendørs: " . $indendørsudendørs . "\n" . 'Event dato: ' . $eventDato . "\n" . 'Event adresse: ' . $eventAdresse . "\n" . 'Tidspunkt: ' . $tidspunkt . "\n" . 'Gæster: ' . $guests . "\n" . 'Beskrivelse af event: ' . $beskrivEvent;
 
 $mail->send();
