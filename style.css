@@ -23,12 +23,13 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* Header */
 
+
 .container {
     display: flex;
-    max-width: 1600;
+    max-width: 1600px;
     margin: 0 auto;
-    padding-left: 64px;
-    padding-right: 64px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -44,6 +45,7 @@ header {
         padding-bottom: 8px;
         justify-content: space-between;
         align-items: center;
+        
 
 
         nav {
@@ -65,14 +67,10 @@ header {
     }
 
     &.is-scrolling {
-        background-color: #432818;
+        background-color: #371e0f;
         transition: 0.3s;
-
-        
     }
-
 }
-
 
 .hamburger {
     position: relative;
@@ -175,11 +173,6 @@ header {
     font-size: 24px;
 }
 
-
-
-
-
-
 /* HERO */
 
 .hero {
@@ -191,33 +184,41 @@ header {
     align-items: flex-end;
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-}
-
-
 .hero-image {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+}
+
+.herogradient {
+    position: relative; /* Allows absolute positioning inside it */
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+    display: flex; /* Ensures the image fills the container */
+}
+
+.herogradient:after {
+    content: ''; /* Necessary for the pseudo-element to work */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 100%); /* Gradient effect */
+    z-index: 1; /* Ensures it covers the image */
 }
 
 .hero-content {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-bottom: 20px;
+    z-index: 3;
 }
-
 
 .hero-content h1 {
     color: #fff;
@@ -253,6 +254,7 @@ header {
     background: #bbb9b9;
     transition: 0.3s;
 }
+
 
 /* Info */
 .info-section {
@@ -443,19 +445,14 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     min-width: 200px;
     max-width: calc(50% - 20px);
-}
-
-.thankyoumessage {
     text-align: center;
-    justify-content: center;
-    padding: 200px;
 }
-
 
 .time {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 10px;
+
 }
 
 .price {
@@ -467,7 +464,6 @@ header {
     color: #FFF;
     padding: 0px;
     text-align: center;
-    margin: 50px;
 }
 
 .footer-prices p {
@@ -593,6 +589,52 @@ select {
 }
 
 
+/* Footer */
+
+footer {
+    background-color: #371e0f;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1; /* Each column takes equal space */
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media li {
+    display: inline-block; /* Display social icons inline */
+    margin-right: 10px;
+}
+
+.social-media li a img {
+    width: 24px; /* Set appropriate size for social icons */
+    height: auto;
+}
+
 
 /* Screen Size */
 
@@ -616,6 +658,7 @@ select {
     }
 
     .logo_div {
+        padding-left: 35px;
         padding-right: 0;
         margin: auto;
         display: flex;
@@ -626,8 +669,9 @@ select {
         max-height: 100%;
         max-height: 100%;
     }
-
 }
+
+
 
 
 /* Hero */

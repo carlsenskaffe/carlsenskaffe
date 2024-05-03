@@ -14,6 +14,16 @@ window.onload = function () {
         burger_button.classList.toggle('is-active');
         mobile_menu.classList.toggle('is-active');
     })
+
+    
+    mobile_menu.addEventListener('click', function (event) {
+        // Check if the clicked element is a link
+        if (event.target.tagName === 'A') {
+            mobile_menu.classList.remove('is-active');
+            burger_button.classList.remove('is-active');
+        }
+    });
+
 }
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
@@ -28,14 +38,11 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         // Handle the response from sendE.php
         if(response.ok) {
             this.reset();
-            // Show the thank-you message
             alert('Tak for din forespørgsel. Vi vender tilbage hurtigst muligt.')
         } else {
-            // Handle errors
             alert('Der opstod en fejl. Prøv venligst igen.');
         }
     }).catch(error => {
-        // Handle any other errors
         alert('Der opstod en fejl. Prøv venligst igen.');
     });
 });

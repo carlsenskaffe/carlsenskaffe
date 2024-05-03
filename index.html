@@ -17,7 +17,7 @@
         <div class="container">
             <div class="logo_div">
                 <a href="index.html">
-                    <img src="assets/logo.png" width="100" height="100" class="logo">
+                    <img src="assets/logo.png" width="75" height="75" class="logo">
                 </a>
             </div>
 
@@ -34,10 +34,10 @@
            
     </header>
     <nav class="mobile-nav">
-        <a href="#drinks-menu">Menu</a>
-        <a href="#faq-section">Spørgsmål</a>
-        <a href="#prices">Priser</a>
-        <a href="#contact">Forespørgsel</a>
+        <a class="nav_a" href="#drinks-menu">Menu</a>
+        <a class="nav_a" href="#faq-section">Spørgsmål</a>
+        <a class="nav_a" href="#prices">Priser</a>
+        <a class="nav_a" href="#contact">Forespørgsel</a>
         <div class="mobile-footer">
             <a href="https://www.instagram.com/carlsenskaffe" target="_blank">
                 <img src="assets/svg/instagram.svg" width="30px" height="30px">
@@ -49,8 +49,10 @@
     </nav>
 
     <div class="hero">
-        <img src="assets/hero.jpg" class="hero-image">
-        <div class="hero-content" id="hero-content">
+        <div class="herogradient">
+            <img src="assets/hero.jpg" class="hero-image">
+        </div>
+            <div class="hero-content" id="hero-content">
             <h1>Lej en kaffecykel med barista i København</h1>
             <a href="#contact">
                 <button class="hero-button" id="hero-button">Få et uforpligtende tilbud</button>
@@ -170,7 +172,7 @@
     </section>
     
 
-    <section class="prices">
+    <section id="prices">
         <h2 class="priser-title">Vores priser</h2>
         <div class="pricing-table">
             <div class="price-option">
@@ -269,8 +271,37 @@
         <div class="image-container">
             <img src="assets/3.jpg">
         </div>
-        
     </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Nagivation</h4>
+                <ul>
+                    <li><a href="#drinks-menu">Menu</a></li>
+                    <li><a href="#faq-section">Spørgsmål</a></li>
+                    <li><a href="#prices">Priser</a></li>
+                    <li><a href="#contact">Forespørgsel</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Betingelser</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <ul class="social-media">
+                    <li><a href="https://www.instagram.com/carlsenskaffe" target="_blank"><img src="assets/svg/instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="https://www.findsmiley.dk/1411083" target ="_blank"><img src="assets/Smiley.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
    <script src="main.js"></script>
 </body>
