@@ -450,9 +450,7 @@ header {
 
 .time {
     font-size: 1.5em;
-    font-weight: bold;
     margin-bottom: 10px;
-
 }
 
 .price {
@@ -746,6 +744,13 @@ footer {
         margin-top: 20px;
         padding: 0;
 
+    }
+
+    .price {
+        font-size: 1.5em;
+    }
+    .time {
+        font-size: 1.3em;
     }
 }
 
