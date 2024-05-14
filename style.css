@@ -578,6 +578,7 @@ select {
 footer {
     background-color: #371e0f;
     color: #fff;
+    padding-bottom: 10px;
 }
 
 .footer-container {
@@ -619,6 +620,7 @@ footer {
 .social-media li a img {
     width: 30px;
     height: auto;
+    padding-top: 15px; 
 }
 
 
@@ -777,7 +779,6 @@ footer {
     .footer-column:last-child {
         flex: 0 0 100%;
         order: 3; 
-        padding-top: 15px; 
     }
 
     .social-media {
