@@ -578,7 +578,6 @@ select {
 footer {
     background-color: #371e0f;
     color: #fff;
-    padding: 20px 0;
 }
 
 .footer-container {
@@ -590,13 +589,15 @@ footer {
 }
 
 .footer-column {
-    flex: 1;
-    padding: 10px;
+    flex: 1 1 33%;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .footer-column h4 {
     font-size: 16px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .footer-column ul {
@@ -724,13 +725,8 @@ footer {
         display: block;
     }
     
-    .contact .image-container {
-        
-    }
-    
     .contact img {
         max-width: 100%;
-        
         padding: 0;
     }
 
@@ -741,12 +737,7 @@ footer {
         font-size: 1.3em;
     }
 
-    .faq-content {
-        flex: 1;
-        padding: 30px;
-        text-align: center;
-        position: relative;
-    }
+    
 }
 
 @media (min-width: 600) {
@@ -764,6 +755,34 @@ footer {
 @media (max-width: 480px) {
     .price-option {
         min-width: 40%;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .footer-container {
+        flex-wrap: wrap;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .footer-column {
+        padding: 0 10px;
+    }
+
+    .footer-column a {
+        
+    }
+
+    .footer-column:last-child {
+        flex: 0 0 100%;
+        order: 3; 
+        padding-top: 15px; 
+    }
+
+    .social-media {
+        text-align: center;
+        width: 100%;
     }
     
 }
