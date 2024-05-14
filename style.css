@@ -4,7 +4,7 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    scroll-margin-top: 115px;
+    scroll-margin-top: 100px;
 }
 
 
@@ -277,14 +277,6 @@ header {
     color: #fff;
 }
 
-@media (max-width: 576px) {
-    .info-box {
-        width: calc(45% - 20px);
-        max-width: 60%;
-    }
-}
-
-
 
 
 
@@ -302,7 +294,6 @@ header {
 .Vores-Menu {
     font-size: 36px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     width: 100%;
 }
 
@@ -395,7 +386,7 @@ header {
 
 .faq-item p {
     font-size: 18px;
-    max-height: 0;
+    max-height: 0px;
     overflow: hidden;
     transition: max-height 0.2s ease;
 }
@@ -409,7 +400,6 @@ header {
 .priser-title {
     font-size: 36px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     width: 100%;
     color: #FFF;
 }
@@ -597,8 +587,8 @@ footer {
 
 .footer-column h4 {
     font-size: 16px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-top: 15px;
 }
 
 .footer-column ul {
@@ -772,10 +762,6 @@ footer {
         padding: 0 10px;
     }
 
-    .footer-column a {
-        
-    }
-
     .footer-column:last-child {
         flex: 0 0 100%;
         order: 3; 
@@ -786,4 +772,10 @@ footer {
         width: 100%;
     }
     
+    .info-box {
+        width: 100%;
+        max-width: 100%;
+        margin: 20px;
+        margin-top: 0;
+    }
 }

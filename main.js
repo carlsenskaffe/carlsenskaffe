@@ -55,10 +55,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const paragraph = parent.querySelector('p');
             if (parent.classList.contains('active')) {
                 parent.classList.remove('active');
-                paragraph.style.maxHeight = null; // Reset max-height
+                paragraph.style.maxHeight = null;
             } else {
                 parent.classList.add('active');
-                paragraph.style.maxHeight = paragraph.scrollHeight + "px"; // Set max-height dynamically
+                paragraph.style.maxHeight = paragraph.scrollHeight + "px";
             }
         });
     });
