@@ -329,6 +329,10 @@ header {
     height: auto; /
 }
 
+.karamelsirup {
+    font-weight: 600;
+}
+
 /* FAQ */
 .faq-section {
     display: flex;
