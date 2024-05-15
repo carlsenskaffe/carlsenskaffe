@@ -603,14 +603,16 @@ footer {
 }
 
 .social-media li {
-    display: inline-block;
     margin-right: 10px;
 }
 
 .social-media li a img {
     width: 30px;
     height: auto;
-    padding-top: 15px; 
+}
+
+.instapadding {
+    padding-top: 15px;
 }
 
 
@@ -771,11 +773,20 @@ footer {
         text-align: center;
         width: 100%;
     }
+
+    .social-media li {
+        display: inline-block;
+    }
     
+    .instapadding {
+        padding-top: 0px;
+    }
+
     .info-box {
         width: 100%;
         max-width: 100%;
         margin: 20px;
         margin-top: 0;
     }
+    
 }
