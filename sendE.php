@@ -8,8 +8,6 @@ use PHPMailer\PHPMailer\SMTP;
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    
-    
     function sanitizeInput($data) {
         return htmlspecialchars(stripslashes(trim($data)));
     }
@@ -29,17 +27,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Validate email
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        die("Invalid email format");
+        http_response_code(400);
+        echo "Invalid email format";
+        exit();
     }
 
     $mail = new PHPMailer(true);
-
 
     try {
         $mail->isSMTP();
         $mail->SMTPAuth = true;
 
-        $mail->Host ="smtp.gmail.com";
+        $mail->Host = "smtp.gmail.com";
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
@@ -54,11 +53,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Body = 'Navn: ' . $fornavn . ' ' . $efternavn . "\n" . 'Email: ' . $email . "\n" . 'Telefon Nummer: ' . $telefonNummer . "\n" . 'Event type: ' . $eventType . "\n" . "Indendørs / Udendørs: " . $indendørsudendørs . "\n" . 'Event dato: ' . $eventDato . "\n" . 'Event adresse: ' . $eventAdresse . "\n" . 'Tidspunkt: ' . $tidspunkt . "\n" . 'Gæster: ' . $guests . "\n" . 'Beskrivelse af event: ' . $beskrivEvent;
 
         $mail->send();
+        http_response_code(200);
         echo "Message sent successfully";
     } catch (Exception $e) {
+        http_response_code(500);
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 } else {
+    http_response_code(405);
     echo "Invalid request method.";
 }
 
