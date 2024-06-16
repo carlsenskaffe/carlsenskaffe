@@ -40,36 +40,30 @@ header {
     left: 0;
     width: 100%;
     font-weight: 650;
-    .container {
-        padding-top: 8px;
-        padding-bottom: 8px;
-        justify-content: space-between;
-        align-items: center;
-        
+}
 
+header .container {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        nav {
-            display: grid;
-            grid-gap: 16px;
-            grid-template-columns: repeat(4,auto);
+header .container nav {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(4,auto);
+}
 
-            @media (max-width: 767px) {
-                display: none;
-            }
+header .container nav a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
 
-            a {
-                color: #fff;
-                font-size: 20px;
-                text-decoration: none;
-
-            }
-        }
-    }
-
-    &.is-scrolling {
-        background-color: #371e0f;
-        transition: 0.3s;
-    }
+.is-scrolling {
+    background-color: #371e0f;
+    transition: 0.3s;
 }
 
 .hamburger {
@@ -140,23 +134,25 @@ header {
     background: #261409;
 }
 
-
-
-
 .section-title {
     color: #FFF;
     text-align: center;
     padding: 40px 0;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .section-title h2 {
     font-size: 36px;
+    margin: 15px;
     margin-bottom: 5px;
+    margin-top: 0px;
 }
 
 .section-title p {
     font-size: 24px;
+    margin: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* HERO */
@@ -296,6 +292,7 @@ header {
     background-color: #432818;
     color: #FFF;
     padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 .Vores-Menu {
@@ -358,14 +355,19 @@ header {
 
 .faq-content {
     flex: 1;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     position: relative;
+    padding-bottom: 0px;
 }
 
 .image-container {
     flex: 1;
-    padding: 40px;
+    padding: 20px;
+}
+
+.faq-section .image-container {
+    padding-bottom: 0px;
 }
 
 .image-container img {
@@ -412,6 +414,8 @@ header {
     color: #fff;
 }
 
+
+
 /* Priser */
 
 .priser-title {
@@ -419,6 +423,7 @@ header {
     text-align: center;
     width: 100%;
     color: #FFF;
+    padding-top: 10px;
 }
 
 .pricing-table {
@@ -427,6 +432,7 @@ header {
     flex-wrap: wrap;
     padding: 20px;
     color: #FFF;
+    padding-top: 0px;
 }
 
 .price-option {
@@ -439,6 +445,7 @@ header {
     min-width: 200px;
     max-width: calc(50% - 20px);
     text-align: center;
+    
 }
 
 .time {
@@ -488,7 +495,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    max-width: 700px; 
+    max-width: 800px;
 }
 
 .contact h1 {
@@ -669,11 +676,15 @@ footer {
 
     /* Hero */
     .hero-content {
-        margin-bottom: 20%;
+        margin-bottom: 5%;
     }
 
     .hero {
-        height: 95vh;
+        height: 90vh;
+    }
+
+    header .container nav {
+        display: none;
     }
 
     

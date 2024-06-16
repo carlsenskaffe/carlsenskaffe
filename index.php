@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Carlsens Kaffe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/ico" href="assets/favicon.ico">
@@ -11,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-
 
     <header class="header">
         <div class="container">
@@ -61,24 +62,24 @@
         <div class="section-title">
             <h2>Book en ægte kaffeoplevelse til dine gæster</h2>
             <p>
-               Vi kan lejes til alle slags events, som private fester, firmaevents, messer osv.<br>
+               Skal du have en barista til at skabe god stemning til din næste begivenhed? 
             </p>
         </div>
         <div class="container1">
             <div class="info-box">
                 <h3>Vores Kaffe</h3>
-                <p>Vi bruger kun de bedste bønner, omhyggeligt udvalgt for at sikre at hver kop smager perfekt.<br>Vi bruger økologisk sødmælk, men kan også tage havremælk med.</p>
+                <p>Vi bruger kun de bedste økologiske bønner, omhyggeligt udvalgt for at sikre at hver kop smager perfekt. Vores kaffe har en rig og fyldig smag, med smagsnoter af creamet mørk chokolade.<br>Vi bruger økologisk sødmælk, men kan også tage havremælk med.</p>
             </div>
             <div class="info-box">
                 <h3>Vores udstyr</h3>
-                <p>Vi bruger en elektronisk Fracino Contempo, som fungerer på både strøm og gas, hvilket betyder kaffecyklen kan stå både indenfor og udendørs. Dette giver også en nem mulighed, for at cyklen kan flyttes under et event.</p>
+                <p>Vi bruger en elektronisk Fracino Contempo, som fungerer på både strøm og gas, hvilket betyder kaffecyklen kan stå både indenfor og udendørs.<br>Hvis der skulle være brug for det, kan vi også sagtens flytte kaffecyklen under et event.</p>
             </div>
             <div class="info-box">
                 <h3>Fantastisk service</h3>
                 <p>Din barista vil byde på en imødekommende og venlig service, hvor dine gæster vil kunne kigge med over skulderen på baristaen og lære om kaffeprocessen.</p>
             </div>
             <div class="info-box">
-                <h3>Skrædersyede events</h3>
+                <h3>Skræddersyede events</h3>
                 <p>Står du for et større event, og vil du ikke vil have kaffe ad libitum, kan vi sagtens stå og sælge til dit event. Læs mere <a class="info-mail" href="#faq-section">her</a></p>
             </div>
             
@@ -99,7 +100,7 @@
         </div>
         <div class="drink-item">
             <img src="assets/svg/Flat White.svg" alt="FlatWhite" class="drink-icon">
-            <h3>Flat White</h3>
+            <h3>Flat white</h3>
         </div>
         <div class="drink-item">
             <img src="assets/svg/Americano.svg" alt="Americano" class="drink-icon">
@@ -107,7 +108,7 @@
         </div>
         <div class="drink-item">
             <img src="assets/svg/Caffe Latte.svg" alt="CaffeLatte" class="drink-icon">
-            <h3>Caffe Latte</h3>
+            <h3>Caffe latte</h3>
         </div>
         <div class="drink-item">
             <img src="assets/svg/Cappuccino.svg" alt="Cappuccino" class="drink-icon">
@@ -120,22 +121,22 @@
         
         <div class="drink-item">
             <img src="assets/svg/Varm Kakao.svg" alt="VarmKakao" class="drink-icon">
-            <h3>Varm Kakao</h3>
+            <h3>Varm kakao</h3>
         </div>
         <div class="drink-item">
             <img src="assets/svg/Chai Latte.svg" alt="ChaiLatte" class="drink-icon">
-            <h3>Chai Latte</h3>
+            <h3>Chai latte</h3>
         </div>
         <div class="drink-item">
             <img src="assets/svg/Te.svg" alt="Te" class="drink-icon">
-            <h3>Økologisk valgfri Te</h3>
+            <h3>Økologisk valgfri te</h3>
         </div>
         <a class="karamelsirup">*Karamelsirup er standard, men skriv gerne hvilken sirup dine gæster ville foretrække.</a>
     </section>
 
     <section id="faq-section" class="faq-section">
         <div class="image-container">
-            <img src="assets/2.JPG">
+            <img src="assets/2.jpg">
         </div>
         <div class="faq-content">
             <h2>Ofte Stillede Spørgsmål</h2>
@@ -155,8 +156,11 @@
                 <h3>Hvad skal kaffecyklen bruge?</h3>
                 <p>
                     Kaffecyklen er udstyret med egen strøm, vand, gas, kalkfilter og køleboks.
-                    <br>Køleboksen har dog kun plads til 8 liter mælk (ca. 40 kopper kaffe), så baristaen skal have adgang til et køleskab for at kunne have mælk på køl.
+                    <br>Køleboksen har plads til 8 liter mælk.
                 </p>
+            </div>
+            <div class="faq-item">
+                <h3></h3>
             </div>
             
         </div>
@@ -290,10 +294,10 @@
                     <li><a href="https://www.instagram.com/carlsenskaffe" target="_blank"><img class="instapadding" src="assets/svg/instagram.svg" alt="Instagram"></a></li>
                     <li><a href="https://www.findsmiley.dk/1411083" target ="_blank"><img src="assets/Smiley.png"></a></li>
                     <li><a href="https://www.iubenda.com/privacy-policy/51529802" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privatlivspolitik ">Privatlivspolitik</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script></li>
-                    <li><a href="https://www.iubenda.com/privacy-policy/51529802/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Cookiepolitik ">Cookiepolitik</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script></li>
                 </ul>
             </div>
         </div>
+        <script src="https://app.weply.chat/widget/26481c0966b89ed01c88a998c1fe83ff" async></script>
     </footer>
 
    <script src="main.js"></script>

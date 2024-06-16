@@ -38,7 +38,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         // Handle the response from sendE.php
         if(response.ok) {
             this.reset();
-            alert('Tak for din forespørgsel. Vi vender tilbage hurtigst muligt.')
+            alert('Tak for din forespørgsel. Vi vender tilbage hurtigst muligt over mail.')
         } else {
             alert('Der opstod en fejl. Prøv venligst igen.');
         }
